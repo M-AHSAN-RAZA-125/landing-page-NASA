@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./font/Roboto.zip");
+    font-family: "Roboto" src(url("./font/Arimo\,Roboto\,Smooch_Sans\,Space_Grotesk/"));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont";
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --red: #ff0000;
+    --dark-red: #cc0000;
+    --roboto: url(./font/Smooch_Sans/);
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.navbar .srch {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar .srch .explr {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar .srch .explr h3 {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+.navbar .srch .explr i {
+    color: var(--white);
+    font-size: 12px;
+    width: 5px;
+    height: 5px;
+}
+
+.navbar .srch input {
+    padding: 5px;
+    border: none;
+    color: var(--black);
+    border-radius: 0px;
+    background-color: var(--black);
+    border: 1px solid var(--white);
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.navbar .links a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.navbar .links ul li i {
+    color: var(--white);
+    font-size: 16px;
+    width: 5px;
+    height: 5px;
+}
+
+.space {
+    display: flex;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+
+.responsive-icon {
+    color: var(--white);
+    font-size: 26px !important;
+}
+
+.live {
+    color: var(--white);
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 6%;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.live:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar {
+        max-width: 950px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hide-2 {
+        display: none;
+    }
+
+    .show-2 {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)), url("./NASA-pictures/bg-her-section.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    background-color: var(--black);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 7%;
+    color: #fff;
+    width: 50%;
+    height: 80%;
+}
+
+.content h3 {
+    font-family: var(--roboto);
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.content p {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.content button {
+    padding: 10px 20px;
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.content button:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.content-2 p {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 7%;
+    color: var(--white);
+    width: fit-content;
+}
+
+.content-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.content-3 p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 7%;
+    color: var(--white);
+    width: fit-content;
+}
+
+.content-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.content-4 p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 7%;
+    color: var(--white);
+    width: fit-content;
+}
+
+.down-side {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.down-side i {
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 8%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.down-side i:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.down-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 20px;
+    padding-top: 2%;
+    padding-left: 0px;
+    color: var(--white);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down-content .text {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.down-content .pause {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+
+.down-content .pause img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.down-content .pause i {
+    font-size: 45px;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 0px 2.5px;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 990px) {
+    .content h3{
+        font-size: 40px;
+    }
+    .hs-hide {
+        display: none;
+    }
+}
