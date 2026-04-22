@@ -254,6 +254,7 @@
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    width: 100%;
 }
 
 .down-side i {
@@ -276,6 +277,7 @@
 
 .uppercase {
     text-transform: uppercase;
+    width: max-content;
 }
 
 .down-content {
@@ -294,7 +296,7 @@
 .down-content .text {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 20px;
 }
 
 .down-content .pause {
@@ -302,7 +304,7 @@
     flex-direction: row;
     gap: 80px;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-right: 5%;
     padding-top: 3%;
 }
@@ -320,15 +322,180 @@
     cursor: pointer;
     background-color: gray;
     border-radius: 50%;
-    padding: 0px 2.5px;
-    margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 990px) {
-    .content h3{
+    .content h3 {
         font-size: 40px;
     }
-    .hs-hide {
+
+    .pause div {
         display: none;
     }
+}
+
+@media only screen and (max-width: 835px) {
+    .uppercase {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .content button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .down-content .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section {
+        height: fit-content;
+    }
+
+    .hero-section .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-2,
+    .content-3,
+    .content-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        border-top: 0.5px solid var(--white);
+    }
+}
+
+/* Feature Section */
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.feature .news h3 {
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 46px;
+}
+
+.feature .recent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.feature .recent h5 {
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.feature .recent i {
+    background-color: var(--red);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 16px;
+    padding: 2px 3px;
+}
+
+/* Feature Pics */
+.feature-pics {
+    display: grid;
+    grid-template-columns: 230px 240px 270px 270px;
+    grid-template-rows: 150px 150px;
+    gap: 15px;
+    padding-right: 7%;
+    padding-left: 7%;
+    /* margin-bottom: 10%; */
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.pic-1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/feature-1.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/feature-2.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/feature-3.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/feature-4.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-1 , .pic-2 , .pic-3 , .pic-4 .top i{ 
+    color: var(--white);
+    font-size: 8px;
+    border: 1px solid var(--white);
+    /* border-radius: 50%; */
+    padding: 5% 5%;
+}
+    
+.pic-1, .pic-2, .pic-3, .pic-4 .top p{ 
+    color: var(--white);
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.pic-1 , .pic-2 , .pic-3 , .pic-4 .bottom p{ 
+    color: var(--white);
+    font-size: 16px;
+}
+.pic-1 , .pic-2 , .pic-3 , .pic-4 .bottom h5{ 
+    color: var(--white);
+    font-size: 16px;
 }
