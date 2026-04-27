@@ -16,6 +16,7 @@
     --black: #000;
     --red: #ff0000;
     --dark-red: #cc0000;
+    --blue: #0000ff;
     --roboto: url(./font/Smooch_Sans/);
 
 }
@@ -819,6 +820,11 @@
 }
 
 @media only screen and (max-width: 990px) {
+
+    .advance-nasa {
+        height: 120vh;
+    }
+
     .advance-nasa .top h4 {
         color: var(--white);
         font-size: 45px;
@@ -842,12 +848,6 @@
     }
 }
 
-@media only screen and (max-width: 890px) {
-    .advance-nasa {
-        background-color: linear-gradient(to right, black, black), ;
-    }
-}
-
 /* NASA MISSION */
 .nasa-mission {
     width: 100%;
@@ -861,7 +861,7 @@
     gap: 10px;
     align-items: center;
     width: fit-content;
-    margin-left: 85%;
+    margin-left: 80%;
 }
 
 .nasa-mission .more i {
@@ -900,26 +900,257 @@
     background-size: cover;
 }
 
-.nasa-mission-images .card-1 {
+.nasa-mission-images .img-1 {
     background-image: url(./NASA-pictures/nasa-mission-pic-1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.nasa-mission-images .card-2 {
+.nasa-mission-images .img-2 {
     background-image: url(./NASA-pictures/nasa-mission-pic-2.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.nasa-mission-images .card-3 {
+.nasa-mission-images .img-3 {
     background-image: url(./NASA-pictures/nasa-mission-pic-3.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.nasa-mission-images .card-4 {
+.nasa-mission-images .img-4 {
     background-image: url(./NASA-pictures/nasa-misson-pic-4.jpg);
-    background-size: cover;
+}
+
+.nasa-mission-images .card .text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 85%;
+    transition: 0.3s;
+}
+
+.nasa-mission-images .card .text p {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.nasa-mission-images .card .text i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+@media only screen and (max-width: 990px) {
+    .nasa-mission-images .card .text {
+        margin-top: 100%;
+    }
+
+    .nasa-mission-images .card .text p {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nasa-mission-images {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin: 10px 20px;
+    }
+
+    .nasa-mission-images .img-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .nasa-mission-images .img-2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .nasa-mission-images .img-1 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .nasa-mission-images .img-1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .nasa-mission-images .card .text {
+        margin-top: 70%;
+    }
+}
+
+/* TODAY SECTION */
+.today {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 0px 20px;
+    margin-top: 7%;
+}
+
+.today .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    width: 80%;
+}
+
+.today .text .head p {
+    color: var(--black);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.today .text .head h2 {
+    color: var(--black);
+    font-size: 50px;
+    text-transform: capitalize;
+    width: fit-content;
+}
+
+.today .text .para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.today .text .para .top h5 {
+    color: var(--black);
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.today .text .para .mid p {
+    color: var(--black);
+    font-size: 18px;
+    text-align: start;
+    line-height: 1.4;
+}
+
+.today .text .para .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+.today .text .para .bottom p {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.today .text .para .bottom i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+.today .image {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0% 0px;
+    cursor: pointer;
+}
+
+.today .image img {
+    width: 75%;
+    height: 100%;
     background-position: center;
+    background-size: cover;
+}
+
+.today .image i {
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 2px 7px;
+    padding-bottom: 10px;
+    background-color: var(--blue);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.view-img {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    margin-left: 89%;
+}
+
+.view-img p {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.view-img i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 990px) {
+    .today {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .today .text {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+    }
+    .view-img{
+        margin-left:80% ;
+    }
+}
+
+@media only screen and (max-width: 792px){
+    .view-img{
+        margin-left:80% ;
+    }
+}
+@media only screen and (max-width: 594px){
+    .view-img{
+        margin-left:75% ;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .view-img{
+        margin-left:70% ;
+    }
+}
+@media only screen and (max-width: 396px){
+    .view-img{
+        margin-left:65% ;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .view-img{
+        margin-left:60% ;
+    }
 }
