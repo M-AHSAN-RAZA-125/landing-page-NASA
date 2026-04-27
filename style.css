@@ -414,11 +414,11 @@
 .feature-pics {
     display: grid;
     grid-template-columns: 230px 240px 270px 270px;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: 230px 230px;
     gap: 15px;
     padding-right: 7%;
     padding-left: 7%;
-    /* margin-bottom: 10%; */
+    width: 100%;
 }
 
 .top {
@@ -427,12 +427,14 @@
     gap: 10px;
     align-items: center;
 }
+
 .bottom {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: start;
 }
+
 .pic-1 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/feature-1.png);
     background-size: cover;
@@ -443,6 +445,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .pic-2 {
@@ -454,6 +457,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .pic-3 {
@@ -465,6 +469,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .pic-4 {
@@ -476,26 +481,445 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.pic-1 , .pic-2 , .pic-3 , .pic-4 .top i{ 
+.pic-1 .top i,
+.pic-2 .top i,
+.pic-3 .top i,
+.pic-4 .top i {
     color: var(--white);
-    font-size: 8px;
+    font-size: 12px;
     border: 1px solid var(--white);
-    /* border-radius: 50%; */
-    padding: 5% 5%;
+    border-radius: 50%;
+    padding: 1% 1%;
+    margin: 5%;
+    margin-right: 0%;
 }
-    
-.pic-1, .pic-2, .pic-3, .pic-4 .top p{ 
+
+.pic-1 .top p,
+.pic-2 .top p,
+.pic-3 .top p,
+.pic-4 .top p {
     color: var(--white);
-    font-size: 36px;
+    font-size: 26px;
     text-transform: uppercase;
 }
-.pic-1 , .pic-2 , .pic-3 , .pic-4 .bottom p{ 
+
+.pic-1 .bottom p,
+.pic-2 .bottom p,
+.pic-3 .bottom p,
+.pic-4 .bottom p {
     color: var(--white);
+    font-size: 20px;
+    margin: 5%;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+}
+
+.pic-1 .bottom h5,
+.pic-2 .bottom h5,
+.pic-3 .bottom h5,
+.pic-4 .bottom h5 {
+    color: var(--white);
+    font-size: 28px;
+    margin: 5%;
+    margin-top: 0%;
+}
+
+@media only screen and (max-width: 990px) {
+    .feature-pics {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 200px 200px;
+        gap: 15px;
+    }
+
+    .pic-1 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .pic-2 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .pic-3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .pic-4 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .pic-1 .top i,
+    .pic-2 .top i,
+    .pic-3 .top i,
+    .pic-4 .top i {
+        color: var(--white);
+        font-size: 8px;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+        padding: 1% 1%;
+        margin: 5%;
+        margin-right: 0%;
+    }
+
+    .pic-1 .top p,
+    .pic-2 .top p,
+    .pic-3 .top p,
+    .pic-4 .top p {
+        color: var(--white);
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .pic-1 .bottom p,
+    .pic-2 .bottom p,
+    .pic-3 .bottom p,
+    .pic-4 .bottom p {
+        color: var(--white);
+        font-size: 14px;
+        margin: 5%;
+        margin-bottom: 0%;
+        text-transform: uppercase;
+    }
+
+    .pic-1 .bottom h5,
+    .pic-2 .bottom h5,
+    .pic-3 .bottom h5,
+    .pic-4 .bottom h5 {
+        color: var(--white);
+        font-size: 20px;
+        margin: 5%;
+        margin-top: 0%;
+    }
+}
+
+/* Bottom Features */
+.bottom-feature {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 24.3%;
+    cursor: pointer;
+}
+
+.feature-card img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.feature-card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feature-card .text .duration p {
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.feature-card .text .h5 {
+    width: 100%;
+}
+
+.feature-card .text .h5 h5 {
+    color: var(--black);
     font-size: 16px;
 }
-.pic-1 , .pic-2 , .pic-3 , .pic-4 .bottom h5{ 
+
+.feature-card .text .article {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.feature-card .text .article i {
+    color: var(--black);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    border: 0.5px solid var(--black);
+    padding: auto;
+}
+
+.feature-card .text .article p {
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 990px) {
+    .bottom-feature {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 15px;
+    }
+
+    .feature-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .feature-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .feature-3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .feature-4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .feature-card .text .h5 h5 {
+        color: var(--black);
+        font-size: 14px;
+        width: 370px;
+        width: 370%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .feature-card .text .h5 h5 {
+        color: var(--black);
+        font-size: 14px;
+        width: 370px;
+        width: 320%;
+    }
+
+    .feature-card .text .h5 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bottom-feature {
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        gap: 25px;
+        margin-bottom: 20%;
+    }
+
+    .feature-1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .feature-2 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .feature-3 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .feature-4 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .feature-card .text .h5 h5 {
+        color: var(--black);
+        font-size: 14px;
+        width: 530%;
+        text-align: start;
+    }
+
+    .feature-card .text .h5 {
+        width: 80%;
+    }
+}
+
+/* ADVANCE NASA */
+.advance-nasa {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/advance-bg-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0px 20px;
+    padding-left: 7%;
+    margin-top: 7%;
+}
+
+.advance-nasa .top h4 {
+    color: var(--white);
+    font-size: 50px;
+    text-transform: capitalize;
+    width: 50%;
+    padding-top: 35%;
+}
+
+.advance-nasa .mid p {
+    color: var(--white);
+    font-size: 26px;
+    width: 55%;
+    text-align: start;
+}
+
+.advance-nasa .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.advance-nasa .bottom h4 {
+    color: var(--white);
+    font-size: 28px;
+    width: fit-content;
+    text-align: start;
+}
+
+.advance-nasa .bottom i {
     color: var(--white);
     font-size: 16px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+@media only screen and (max-width: 990px) {
+    .advance-nasa .top h4 {
+        color: var(--white);
+        font-size: 45px;
+        text-transform: capitalize;
+        width: 100%;
+        padding-top: 35%;
+    }
+
+    .advance-nasa .mid p {
+        color: var(--white);
+        font-size: 22px;
+        width: 100%;
+        text-align: start;
+    }
+
+    .advance-nasa .bottom h4 {
+        color: var(--white);
+        font-size: 24px;
+        width: fit-content;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .advance-nasa {
+        background-color: linear-gradient(to right, black, black), ;
+    }
+}
+
+/* NASA MISSION */
+.nasa-mission {
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.nasa-mission .more {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    margin-left: 85%;
+}
+
+.nasa-mission .more i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+.nasa-mission .more p {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.nasa-mission .heading h2 {
+    color: var(--black);
+    font-size: 50px;
+    text-transform: capitalize;
+    padding-left: 5%;
+}
+
+/* NASA MISSION IMAGES */
+.nasa-mission-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.nasa-mission-images .card {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nasa-mission-images .card-1 {
+    background-image: url(./NASA-pictures/nasa-mission-pic-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nasa-mission-images .card-2 {
+    background-image: url(./NASA-pictures/nasa-mission-pic-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nasa-mission-images .card-3 {
+    background-image: url(./NASA-pictures/nasa-mission-pic-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nasa-mission-images .card-4 {
+    background-image: url(./NASA-pictures/nasa-misson-pic-4.jpg);
+    background-size: cover;
+    background-position: center;
 }
