@@ -1192,21 +1192,23 @@
     grid-row: 2/3;
     grid-column: 3/4;
 }
-.images-card .img-1 img{
+
+.images-card .img-1 img {
     width: 100%;
     height: 100%;
 }
 
-.images-card .img-2 img{
+.images-card .img-2 img {
     width: 100%;
     height: 100%;
 }
 
-.images-card .img-3 img{
+.images-card .img-3 img {
     width: 100%;
     height: 100%;
 }
-.nasa-more-images{
+
+.nasa-more-images {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -1214,45 +1216,232 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .nasa-more-images .part-1,
-.nasa-more-images .part-2,.nasa-more-images .part-3{
+.nasa-more-images .part-2,
+.nasa-more-images .part-3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.down{
+
+.down {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
 }
-.down h5{
+
+.down h5 {
     color: var(--black);
     font-size: 18px;
     text-transform: capitalize;
 }
+
 @media only screen and (max-width: 465px) {
-    .nasa-more-images{
+    .nasa-more-images {
         padding-left: 10%;
-            }
-            .nasa-images .heading h1 {
-            font-size: 36px;
-        }
+    }
+
+    .nasa-images .heading h1 {
+        font-size: 36px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-    .nasa-more-images{
+    .nasa-more-images {
         padding-left: 30%;
     }
 }
+
 @media only screen and (max-width: 360px) {
     .nasa-images .heading h1 {
-    font-size: 28px;
-}
+        font-size: 28px;
+    }
 }
 
 @media only screen and (max-width: 310px) {
-    .nasa-more-images{
+    .nasa-more-images {
         padding-left: 45%;
     }
+}
+
+/* EXPLORE UNIVERSE */
+.explore-universe {
+    background-image: url(./NASA-pictures/explore-image.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 15% 30px;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    width: 100%;
+}
+
+.explore-universe .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.explore-universe .h4 h4 {
+    color: var(--white);
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.explore-universe .p p {
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1.4;
+}
+
+.explore-universe .sign-up {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.explore-universe .sign-up h3 {
+    color: var(--white);
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.explore-universe .sign-up i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+/* FREEDOM 250 */
+.freedom-250 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 0px 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: ghostwhite;
+}
+
+.freedom-250 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 150%;
+}
+
+.freedom-250 .text .head p {
+    color: var(--black);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.freedom-250 .text .head h2 {
+    color: var(--black);
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: capitalize;
+    width: fit-content;
+}
+
+.freedom-250 .text .para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.freedom-250 .text .para .top h5 {
+    color: var(--black);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.freedom-250 .text .para .mid p {
+    color: var(--black);
+    font-size: 18px;
+    text-align: start;
+    line-height: 1.4;
+}
+
+.freedom-250 .text .para .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+.freedom-250 .text .para .bottom p {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.freedom-250 .text .para .bottom i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+.freedom-250 .image {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    padding: 0% 0px;
+    cursor: pointer;
+}
+
+.freedom-250 .image img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.freedom-250 .image figcaption {
+    color: var(--black);
+    font-size: 14px;
+    text-align: start;
+    margin-top: 10px;
+}
+
+/* MORE TOPICS */
+/* HEADING */
+.more-topics .heading h1 {
+    color: var(--black);
+    font-size: 50px;
+    text-transform: capitalize;
+    padding-left: 5%;
+}
+
+/* IMAGES */
+.more-topics .topic-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.more-topics .topic-images .card {
+    width: 20%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    background-image: url(./NASA-pictures/more-topic-1.webp);
+    background-position: center;
+    background-size: cover;
 }
