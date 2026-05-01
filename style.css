@@ -1,14 +1,8 @@
-@font-face {
-    font-family: "MyFont";
-    src: url("./font/Roboto.zip");
-    font-family: "Roboto" src(url("./font/Arimo\,Roboto\,Smooch_Sans\,Space_Grotesk/"));
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "MyFont";
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -17,8 +11,6 @@
     --red: #ff0000;
     --dark-red: #cc0000;
     --blue: #0000ff;
-    --roboto: url(./font/Smooch_Sans/);
-
 }
 
 .navbar {
@@ -155,7 +147,7 @@
     background-color: var(--black);
 }
 
-.content {
+.hero-section .content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -206,7 +198,6 @@
 }
 
 .content-2 p {
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -214,6 +205,7 @@
     padding-top: 7%;
     color: var(--white);
     width: fit-content;
+    font-weight: lighter;
 }
 
 .content-3 {
@@ -279,6 +271,7 @@
 .uppercase {
     text-transform: uppercase;
     width: max-content;
+    font-family: var(--light-font);
 }
 
 .down-content {
@@ -305,7 +298,6 @@
     flex-direction: row;
     gap: 80px;
     align-items: center;
-    /* justify-content: center; */
     margin-right: 5%;
     padding-top: 3%;
 }
@@ -924,7 +916,7 @@
     width: fit-content;
     padding: 5px 10px;
     border-radius: 5px;
-    margin-top: 85%;
+    margin-top: 80%;
     transition: 0.3s;
 }
 
@@ -1320,6 +1312,22 @@
     background-color: var(--red);
 }
 
+@media only screen and (max-width:990px) {
+    .explore-universe .text {
+        width: 90%;
+    }
+
+    .explore-universe .p p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:715px) {
+    .explore-universe .h4 h4 {
+        font-size: 30px;
+    }
+}
+
 /* FREEDOM 250 */
 .freedom-250 {
     display: flex;
@@ -1327,7 +1335,7 @@
     gap: 5%;
     padding: 0px 20px;
     margin-top: 7%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
     background-color: ghostwhite;
 }
 
@@ -1418,6 +1426,26 @@
     margin-top: 10px;
 }
 
+@media only screen and (max-width:990px) {
+    .freedom-250 {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .freedom-250 .text .head h2 {
+        font-size: 30px;
+    }
+
+    .freedom-250 .text .para {
+        width: 60%;
+    }
+
+    .freedom-250 .text .para .mid p {
+        width: 60%;
+    }
+}
+
 /* MORE TOPICS */
 /* HEADING */
 .more-topics .heading h1 {
@@ -1428,20 +1456,278 @@
 }
 
 /* IMAGES */
-.more-topics .topic-images {
+.more-topics .topics-images {
     display: flex;
-    flex-direction: column;
-    gap: 2%;
+    flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-bottom: 7%;
 }
 
-.more-topics .topic-images .card {
-    width: 20%;
+.more-topics .topics-images .card {
+    width: 23%;
     height: 350px;
     background-position: center;
     background-size: cover;
     cursor: pointer;
-    background-image: url(./NASA-pictures/more-topic-1.webp);
+    margin: 1.2% 1%;
+}
+
+.more-topics .topics-images .card .content {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    padding-left: 10px;
+    padding-top: 100%;
+}
+
+.more-topics .topics-images .card .content p {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.more-topics .topics-images .card .content i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+.more-topics .topics-images .img-1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topic-1.webp);
     background-position: center;
     background-size: cover;
+}
+
+.more-topics .topics-images .img-2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-4.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-5 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-5.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-6 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-6.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-7 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-7.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.more-topics .topics-images .img-8 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(./NASA-pictures/more-topc-8.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--black);
+    padding: 5% 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+.footer .bio {
+    width: 27%;
+    height: auto;
+}
+
+.footer .bio .logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10%;
+}
+
+.footer .bio .h4 h4 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+
+.footer .bio .p p {
+    color: rgba(255, 255, 255, 0.857);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.footer .bio .about a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer .bio .about a:hover {
+    border-bottom: 2px dotted white;
+}
+
+.footer .bio .join {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.footer .bio .join p {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.footer .bio .join i {
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background-color: var(--red);
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    padding-top: 5%;
+}
+
+.footer .links .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .links .left a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.footer .links .left a:hover {
+    border-bottom: 2px dotted white;
+    width: fit-content;
+}
+
+.footer .links .cntr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer .links .cntr a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.footer .links .cntr a:hover {
+    border-bottom: 2px dotted white;
+    width: fit-content;
+}
+
+.footer .links .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .links .right a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.footer .links .right a:hover {
+    border-bottom: 2px dotted white;
+    width: fit-content;
+}
+
+.footer .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+.footer .icons .h3 h3 {
+    color: rgba(255, 255, 255, 0.846);
+    font-size: 26px;
+    text-transform: capitalize;
+}
+
+.footer .icons .icon {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer .icons .icon i {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.footer .icons .more a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.footer .icons .more a:hover {
+    border-bottom: 2px dotted white;
+    width: fit-content;
+}
+
+.footer .icons .newsletter a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.footer .icons .newsletter a:hover {
+    border-bottom: 2px dotted white;
+    width: fit-content;
 }

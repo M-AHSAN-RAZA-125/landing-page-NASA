@@ -1,26 +1,32 @@
-Smooch Sans Variable Font
-=========================
+Rubik Variable Font
+===================
 
-This download contains Smooch Sans as both a variable font and static fonts.
+This download contains Rubik as both variable fonts and static fonts.
 
-Smooch Sans is a variable font with this axis:
+Rubik is a variable font with this axis:
   wght
 
-This means all the styles are contained in a single file:
-  SmoochSans-VariableFont_wght.ttf
+This means all the styles are contained in these files:
+  Rubik/Rubik-VariableFont_wght.ttf
+  Rubik/Rubik-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Smooch Sans:
-  static/SmoochSans-Thin.ttf
-  static/SmoochSans-ExtraLight.ttf
-  static/SmoochSans-Light.ttf
-  static/SmoochSans-Regular.ttf
-  static/SmoochSans-Medium.ttf
-  static/SmoochSans-SemiBold.ttf
-  static/SmoochSans-Bold.ttf
-  static/SmoochSans-ExtraBold.ttf
-  static/SmoochSans-Black.ttf
+in those cases you can use the static font files for Rubik:
+  Rubik/static/Rubik-Light.ttf
+  Rubik/static/Rubik-Regular.ttf
+  Rubik/static/Rubik-Medium.ttf
+  Rubik/static/Rubik-SemiBold.ttf
+  Rubik/static/Rubik-Bold.ttf
+  Rubik/static/Rubik-ExtraBold.ttf
+  Rubik/static/Rubik-Black.ttf
+  Rubik/static/Rubik-LightItalic.ttf
+  Rubik/static/Rubik-Italic.ttf
+  Rubik/static/Rubik-MediumItalic.ttf
+  Rubik/static/Rubik-SemiBoldItalic.ttf
+  Rubik/static/Rubik-BoldItalic.ttf
+  Rubik/static/Rubik-ExtraBoldItalic.ttf
+  Rubik/static/Rubik-BlackItalic.ttf
 
 Get started
 -----------
