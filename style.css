@@ -403,6 +403,39 @@
     padding: 2px 3px;
 }
 
+@media only screen and (max-width:750px) {
+    .feature {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature .news h3 {
+        font-size: 40px;
+    }
+
+    .feature .recent h5 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .feature {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature .news h3 {
+        font-size: 36px;
+    }
+
+    .feature .recent h5 {
+        font-size: 18px;
+    }
+}
+
+
 /* Feature Pics */
 .feature-pics {
     display: grid;
@@ -694,22 +727,17 @@
     .feature-card .text .h5 h5 {
         color: var(--black);
         font-size: 14px;
-        width: 370px;
         width: 370%;
     }
 }
-
-@media only screen and (max-width: 990px) {
-    .feature-card .text .h5 h5 {
-        color: var(--black);
-        font-size: 14px;
-        width: 370px;
-        width: 320%;
-    }
-
-    .feature-card .text .h5 {
-        width: 100%;
-    }
+@media only screen and (max-width: 815px){
+.bottom-feature{
+    display: flex;
+    flex-direction: column;
+}
+.feature-card{
+    width: 55%;
+}
 }
 
 @media only screen and (max-width: 640px) {
@@ -875,6 +903,15 @@
     font-size: 50px;
     text-transform: capitalize;
     padding-left: 5%;
+}
+
+@media only screen and (max-width:840px) {
+    .nasa-mission .more{
+        margin-left: 5%;
+    }
+    .nasa-mission .more p{
+         white-space: nowrap;
+    }
 }
 
 /* NASA MISSION IMAGES */
@@ -1168,6 +1205,7 @@
     grid-template-columns: 120px 120px 120px;
     grid-template-rows: 100px 100px;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .images-card .first {
@@ -1229,7 +1267,11 @@
     font-size: 18px;
     text-transform: capitalize;
 }
-
+@media only screen and (max-width: 465px){
+    .nasa-more-images .images-card{
+        width: 20%;
+    }
+}
 @media only screen and (max-width: 465px) {
     .nasa-more-images {
         padding-left: 10%;
@@ -1453,6 +1495,7 @@
     font-size: 50px;
     text-transform: capitalize;
     padding-left: 5%;
+    margin-bottom: 3%;
 }
 
 /* IMAGES */
@@ -1466,7 +1509,7 @@
 }
 
 .more-topics .topics-images .card {
-    width: 23%;
+    width: 235px;
     height: 350px;
     background-position: center;
     background-size: cover;
@@ -1547,6 +1590,22 @@
     background-size: cover;
 }
 
+@media only screen and (max-width:990px) {
+    .more-topics .topics-images .card{
+        width: 48%;
+        height: 40%;
+    }
+    .more-topics .topics-images .card .content p {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:777px){
+    .more-topics .topics-images .card{
+        width: 90%;
+        height: 70%;
+    }
+}
+
 /* FOOTER */
 .footer {
     background-color: var(--black);
@@ -1555,6 +1614,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 10%;
     align-items: center;
 }
@@ -1730,4 +1790,14 @@
 .footer .icons .newsletter a:hover {
     border-bottom: 2px dotted white;
     width: fit-content;
+}
+
+@media only screen and (max-width:990px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
 }
